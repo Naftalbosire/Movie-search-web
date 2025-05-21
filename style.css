@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.app {
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+#searchBtn {
+  padding: 12px 20px;
+  background-color: #ff5c58;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#searchBtn:hover {
+  background-color: #ff3b3b;
+}
+
+.results {
+  display: grid;
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #1e1e1e;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.movie-card img {
+  width: 80px;
+  border-radius: 4px;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.movie-year {
+  color: #bbb;
+}
